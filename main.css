@@ -1,45 +1,103 @@
-.body{
+body{
     width: 100%;
-    height: 100%;
+    height: 2000px;
     padding: 0px;
     margin: 0px;
-    overflow-x: visible;
+    /* overflow-x: visible; */
+    background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png)
+
 }
 
 #header {
+    position: fixed;
     background-color: goldenrod;
     width: 100%;
     height: 120px;
-    padding-top: 10px;
-    padding-left: 20px;
+    z-index: 1;
 }
 
 #header-img {
     height: 100px;
-    width: 100px;
+    width: auto;
+    margin: 10px 10px;
     border-radius: 50%;
     border: solid;
     border-width: 1px;
     border-color: black;
 }
 
+img {
+    /* max-width: 100%; */
+}
+h2 {
+    margin-top: 0;
+}
 .main-body {
-    background-color: lightgray;
-    margin-left: 15%;
-    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 120px;
+    padding: 10px 5px 10px 5px;
 }
 
-.container {
-    height: 200px;
-    width: 100%;
-    border: solid;
-    border-color: black;
-    border-width: 1px;
-    margin: 5px 0 5px 0;
-}
 
-.footer {
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 5px 10px 5px 5px;
+        /* flex-wrap: nowrap; */
+        /* height: 200px; */
+        /* width: 100%; */
+        /* margin: 0px 0 5px 0; */
+    }
+
+    .product-image {
+        flex: 1;
+
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* height: 100%; */
+        /* width: auto; */
+    }
+
+    .product-text {
+        flex: 4;
+        /* display: flex; */
+        /* flex-direction: row; */
+    }
+        
+    
+        /* #product {
+            
+            height: 100%;
+            width: auto;
+            float: left;
+            padding-right: 20px;
+        } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer {
     height: 60px;
     width: 100%;
     background-color: goldenrod;
-}
+} */
