@@ -3,14 +3,12 @@ body{
     height: 2000px;
     padding: 0px;
     margin: 0px;
-    /* overflow-x: visible; */
-    background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png)
-
 }
 
 #header {
     position: fixed;
-    background-color: goldenrod;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 120px;
     z-index: 1;
@@ -19,64 +17,81 @@ body{
 #header-img {
     height: 100px;
     width: auto;
-    margin: 10px 10px;
-    border-radius: 50%;
-    border: solid;
-    border-width: 1px;
-    border-color: black;
+    margin: 10px 50px;
 }
 
-img {
-    /* max-width: 100%; */
+.ht{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
-h2 {
-    margin-top: 0;
+.title{
+    font-family: 'Lobster';
+    margin: 0px auto;
+    text-shadow: -3px 3px 3px rgba(251, 233, 237, 0.9); 
+    padding: 0px;
 }
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar li{
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
 .main-body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 120px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 150px;
     padding: 10px 5px 10px 5px;
 }
 
+h2 {
+    margin-top: 0;
+}
 
-    .container {
-        display: flex;
-        justify-content: flex-start;
-        padding: 5px 10px 5px 5px;
-        /* flex-wrap: nowrap; */
-        /* height: 200px; */
-        /* width: 100%; */
-        /* margin: 0px 0 5px 0; */
-    }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tagline image"
+    "details image";
+    justify-content: flex-start;
+    padding: 5px 10px 5px 5px;
+}
 
-    .product-image {
-        flex: 1;
+#product {
+    height: 300px;
+}
 
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* height: 100%; */
-        /* width: auto; */
-    }
+.product-image{
+    grid-area: image;
+}
 
-    .product-text {
-        flex: 4;
-        /* display: flex; */
-        /* flex-direction: row; */
-    }
-        
-    
-        /* #product {
-            
-            height: 100%;
-            width: auto;
-            float: left;
-            padding-right: 20px;
-        } */
+.tagline{
+    grid-area: tagline;
+    font-family: 'Lobster';
+    font-size: 2em;
+    text-justify: center;
+}
+
+.product-text {
+    grid-area: details;
+}
+
+
 
 
 
