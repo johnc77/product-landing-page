@@ -1,0 +1,158 @@
+body{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+}
+
+#header-img {
+    height: 100px;
+    width: auto;
+    margin: 10px 50px;
+}
+
+.ht{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.title{
+    font-family: 'Lobster';
+    font-size: 1.5rem;
+    margin: 0px auto;
+    text-shadow: -5px 5px 3px rgba(251, 233, 237, 0.9); 
+    padding: 0px;
+}
+
+.title h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar li{
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* margin-left: 15%;
+    margin-right: 15%; */
+    margin-top: 150px;
+    padding: 10px 5px 10px 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". tagline image ."
+    ". details image ."
+    ". video video ."
+    ". name email ."
+    ". submit submit .";
+    /* justify-content: flex-start; */
+    padding: 5px 10px 5px 5px;
+}
+
+#product {
+    height: 350px;
+}
+
+.product-image{
+    grid-area: image;
+}
+
+.tagline{
+    grid-area: tagline;
+    font-family: 'Lobster';
+    font-size: 1.5em;
+    text-justify: center;
+}
+
+.product-text {
+    grid-area: details;
+}
+
+#testimonials{
+    background-color: #ffe6ea;
+    height: auto;
+    /* width: 100vw; */
+    padding: 100px;
+    font-family: 'Lobster';
+}
+
+#video{
+    /* margin: auto; */
+    grid-area: video;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#form{
+    background-color: #ffe6ea;
+    width: 100%;
+}
+
+#name-label{
+    grid-area: name;
+}
+
+#email-label{
+    grid-area: email;
+}
+
+#submit{
+    grid-area: submit;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer {
+    height: 60px;
+    width: 100%;
+    background-color: goldenrod;
+} */
