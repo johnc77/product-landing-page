@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    height: 2000px;
+    height: auto;
     padding: 0px;
     margin: 0px;
 }
@@ -27,9 +27,15 @@ body{
 }
 .title{
     font-family: 'Lobster';
+    font-size: 1.5rem;
     margin: 0px auto;
-    text-shadow: -3px 3px 3px rgba(251, 233, 237, 0.9); 
+    text-shadow: -5px 5px 3px rgba(251, 233, 237, 0.9); 
     padding: 0px;
+}
+
+.title h1{
+    padding: 0px;
+    margin: 0px;
 }
 
 .nav-bar{
@@ -52,8 +58,8 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin-left: 15%;
-    margin-right: 15%;
+    /* margin-left: 15%;
+    margin-right: 15%; */
     margin-top: 150px;
     padding: 10px 5px 10px 5px;
 }
@@ -64,16 +70,19 @@ h2 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "tagline image"
-    "details image";
-    justify-content: flex-start;
+    ". tagline image ."
+    ". details image ."
+    ". video video ."
+    ". name email ."
+    ". submit submit .";
+    /* justify-content: flex-start; */
     padding: 5px 10px 5px 5px;
 }
 
 #product {
-    height: 300px;
+    height: 350px;
 }
 
 .product-image{
@@ -83,7 +92,7 @@ h2 {
 .tagline{
     grid-area: tagline;
     font-family: 'Lobster';
-    font-size: 2em;
+    font-size: 1.5em;
     text-justify: center;
 }
 
@@ -91,10 +100,41 @@ h2 {
     grid-area: details;
 }
 
+#testimonials{
+    background-color: #ffe6ea;
+    height: auto;
+    /* width: 100vw; */
+    padding: 100px;
+    font-family: 'Lobster';
+}
 
+#video{
+    /* margin: auto; */
+    grid-area: video;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+#form{
+    background-color: #ffe6ea;
+    width: 100%;
+}
 
+#name-label{
+    grid-area: name;
+}
 
+#email-label{
+    grid-area: email;
+}
+
+#submit{
+    grid-area: submit;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 
